@@ -1,8 +1,4 @@
 {{ define "main" }}
-<a href="{{ .Permalink }}">
-	<h1>
-	{{ .Title }}
-	</h1>
-</a>
+<h1>{{ .Title }}</h1>
 {{ .Content | safeHTML }}
 {{ end }}

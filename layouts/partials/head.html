@@ -18,25 +18,50 @@
 		{{ $title }} | {{ $siteTitle }}
 	</title>
 	<style>
+		* {
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			color: black;
+			transition: color 300ms;
+		}
 		body {
-			font-family: "Iowan Old Style";
+			font-family: "Iowan Old Style", "Iowan", "Palatino";
 			max-width: 600px;
 			margin: auto;
-			padding: 100px 20px;
-			font-size: 18px;
+			padding: 100px 24px;
+			font-size: 17px;
 			background: #FAF8F5;
+			line-height: 26px;
+			
+		}
+		a {
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: #70593A;
+		}
+		
+		a:after {
+			position: relative;
+			top: -1.4em;
+			font-size: 7px;
+			font-weight: bold;
+			content: "↗";
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;			
 		}
 		
 		h1 {
 			margin-bottom: 70px;
 		}
-		
-		* {
-			color: black;
-		}
-		
 		p + p {
-			margin-top: 40px;
+			margin-top: 36px;
+		}
+		ul {
+			list-style: circle;
+		}
+		::selection {
+			background: #F5ECDE;
 		}
 	</style>
 </head>

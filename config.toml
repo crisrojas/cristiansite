@@ -1,15 +1,7 @@
 languageCode = "es-ES"
-title = "crisrojas"
+title = "Cristian F. Patiño Rojas"
 publishDir = "public"
-pygmentsUseClasses=true
-googleAnalytics = "UA-123910995-2"
-
-[params]
-    # Specify favicon (icons/i.png maps to static/icons/i.png). No favicon if not defined.
-    favicon = "favicon.ico"
-    author = "Cristian Rojas"
 
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]
 unsafe= true
-
