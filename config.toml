@@ -2,6 +2,9 @@ languageCode = "es-ES"
 title = "Cristian F. Patiño Rojas"
 publishDir = "public"
 
+[permalinks]
+	escritura = "/:title"
+
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]
 unsafe= true

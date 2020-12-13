@@ -1,7 +1,7 @@
 ---
 title: ¿Qué estoy haciendo ahora?
 ---
-Actualmente curso una carrera de desarrollador iOS en [OpenClassrooms](https://openclassrooms.com) y trabajo como desarrollador de aplicaciones en [v-labs](https://v-labs.fr).
+Actualmente curso una carrera de desarrollo iOS en [OpenClassrooms](https://openclassrooms.com) y trabajo como desarrollador de aplicaciones en [Vlabs](https://v-labs.fr).
 
 El proyecto del cual me ocupo es la versión iOS de [Las Vitrinas de Chartres](https://www.vitrines-chartres.com/). 
 

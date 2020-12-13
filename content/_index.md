@@ -1,5 +1,6 @@
 ---
-title: crisrojas
+title: Inicio
 ---
 
 - [Ahora](ahora)
+- [Escritura](escritura)
