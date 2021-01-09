@@ -2,4 +2,6 @@
 <h1>{{ .Title }}</h1>
 {{ $c := .Content | replaceRE "—([^/]+?)—" "<em>—$1—</em>" }}
 {{ $c | safeHTML }}
+
+{{ partial "comments.html" }}
 {{ end }}
