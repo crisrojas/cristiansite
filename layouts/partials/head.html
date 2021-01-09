@@ -13,7 +13,7 @@
 	
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
-
+	<base href="{{ .Site.BaseURL }}">
 	<title>
 		{{ $title }} | {{ $siteTitle }}
 	</title>
@@ -31,7 +31,7 @@
 			margin: auto;
 			padding: 100px 24px;
 			font-size: 17px;
-			background: #FAF8F5;
+			background: #FAF8F5; // #F4F4F0
 			line-height: 26px;
 			
 		}
@@ -39,7 +39,8 @@
 		blockquote {
 			margin: 0px;
 			padding-left: 10px;
-			border-left: 1px solid black;
+			border-left: 3px solid black;
+			font-style: italic;
 		}
 		
 		a:hover {

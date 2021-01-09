@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h3>Entradas</h3>
 <ul>
-{{ range where .Pages "Section" "escritura" }}
+{{ range where .Site.RegularPages "Section" .Section }}
 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
