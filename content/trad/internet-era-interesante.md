@@ -14,6 +14,6 @@ Tal vez, intentando parecer interesantes, menguaron el valor y la calidad del co
 
 Después los algoritmos crearon una realidad paralela para todos, basándose en los resultados de sus búsquedas y en sus intereses.
 
-Yo no diría que el internet está muerto, pero es un laberinto de códigos en los que caminamos intentando encontrar algo de valor.
+Yo no diría que el internet está muerto, pero sí diría que se ha convertido un laberinto en el que caminamos intentando encontrar algo de valor.
 
 —Anónimo, 4chan.

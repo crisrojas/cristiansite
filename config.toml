@@ -3,8 +3,8 @@ title = "Cristian F. Patiño Rojas"
 publishDir = "public"
 
 [permalinks]
-	escritura = "/:title"
-	trad = "/:title"
+	escritura = "/:filename"
+	trad = "/:filename"
 
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]

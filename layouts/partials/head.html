@@ -43,11 +43,9 @@
 			font-style: italic;
 		}
 		
-		a:hover {
-			color: #4F412C;
-		}
+		a:hover { color: #4F412C; }
 		
-		a:after {
+		.link:after {
 			position: relative;
 			top: -1.4em;
 			font-size: 7px;
@@ -59,22 +57,26 @@
 			margin-bottom: 70px;
 			line-height: 40px;
 		}
-		* + h3 {
-			margin-top: 50px;
-		}
+		* + h3, * + h4 { margin-top: 50px; }
 		* + ul,
 		* + p, 
 		* + blockquote {
 			margin-top: 36px;
 		}
 		
-		ul {
-			list-style: circle;
-		}
+		blockquote p { margin-top: 12px !important; }
 		
+		ul { list-style: circle; }
+		
+		hr {
+			border-style: dotted;
+			border-color: #4F412C;
+		}
 		::selection {
 			/* background: #C4FFED; */
 			background: #F5ECDE;
 		}
+		
+		mark { background: #DCFDAE; }
 	</style>
 </head>

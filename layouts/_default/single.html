@@ -1,5 +1,6 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ $c := .Content | replaceRE "—([^/]+?)—" "<em>—$1—</em>" }}
+{{ $c := $c | replaceRE "::([^/]+)::" "<mark>$1</mark>" }}
 {{ $c | safeHTML }}
 {{ end }}
