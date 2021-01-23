@@ -5,6 +5,7 @@ publishDir = "public"
 [permalinks]
 	escritura = "/:filename"
 	trad = "/:filename"
+	otros = "/:filename"
 
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]

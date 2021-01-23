@@ -25,16 +25,16 @@ Esto es algo en lo que pienso cada vez que como, de hecho, cada vez que termino 
 
 Hay algo profundo y aún así minimalista en este consejo. Es: no te rompas la cabeza pensando en el sentido de la vida...en su lugar, sólo *actúa*. Simplemente lava tu plato. Y mientras lo lavas, encontrarás lo que necesites.
 
-La experiencia me ha mostrado esto último es cierto. Literalmente, lavo mi plato después de comer, lentamente y con *presencia*[^mindfulness]. Es satisfactorio, no cuesta dinero y consume pocos recursos.
+La experiencia me ha mostrado que esto último es cierto. Literalmente, lavo mi plato después de comer, lentamente y con *presencia*[^mindfulness]. Es satisfactorio, es gratis y consume pocos recursos.
 
-Cuando tomo una ducha, lavo a mano mi ropa sucia, las saco afuera y las pongo a secar. Cuando me cambio, recojo cuidadosamente la ropa que me acabo de quitar. Cuando termino de cocinar, limpio la encimera y guardo los ingredientes. Al menos lo intento —no estoy diciendo que sea perfecto.
+Después de una ducha, lavo a mano mi ropa sucia, la saco afuera y la pongo a secar. Cuando me cambio, recojo con cuidado la ropa que me acabo de quitar. Cuando termino de cocinar, limpio la encimera y guardo los ingredientes —o al menos lo intento, no estoy diciendo que sea perfecto—
 
-Acordarse de hacer estas cosas al terminar una actividad no es cosa de pulcritud. Es cuestión de *presencia*[^mindfulness], de terminar lo que empiezas, de estar presente en todo lo que hacemos en lugar de apresurarnos a saltar a la siguiente actividad.
+Acordarse de hacer estas cosas al terminar una actividad no es cuestión de pulcritud. Es cuestión de *presencia*[^mindfulness], de terminar lo que empezamos, de estar presentes en todo lo que hacemos en lugar de apresurarnos a saltar a la siguiente tarea.
 
 [^mindfulness]: Mindfulness
 
 ### Reflexión del traductor
 
-El relato Zen del que habla Leo no es más que una reinterpretación del refrán
+El relato Zen del que habla Leo no es más que una reinterpretación del refrán:
 
 > No dejes para mañana lo que puedas hacer hoy
