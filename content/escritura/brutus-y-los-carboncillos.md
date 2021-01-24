@@ -1,13 +1,11 @@
 ---
 title: 'Brutus y los carboncillos'
 date: 2019-02-18
-tags: ["escritura"]
 type: blog
-draft: true
 ---
 Érase una vez, en el lejano reino de **HoneyPot**, un estudiante de arte llamado Brutus.
 
-![](media/brutus1.png)
+![](/media/brutus1.png)
 
 Brutus acababa de ser admitido en el prestigioso taller Leonardo. 
 
@@ -37,7 +35,7 @@ Brutus había recolectado una cantidad inhumana _-o más bien, ¿inabejana?_ �
 
 Hummp...
   
-![](media/brutushump.png)
+![](/media/brutushump.png)
 
 .
 
@@ -64,7 +62,7 @@ Hummp...
 .
 
 
-![](media/idea.png)
+![](/media/idea.png)
 
 _"Estableceré un sistema de prioridades para clasificar esta información en función de su pertinencia y así facilitaré su estudio"_ - se dijo tras unos momentos de reflexión
 
@@ -149,7 +147,7 @@ Esperad...¿No se nos olvida algo?
 
 _"Los materiales de dibujo!"_
 
-![](media/brutussurprised.png)
+![](/media/brutussurprised.png)
 
 Había olvidado lo más esencial! ¿Qué materiales iba utilzar? ¿Pinceles de la marca _Beecius_? ¿Cuadernos de la marca _Beelicious_?...
 
@@ -166,7 +164,7 @@ Lo que se divisaba en un principio cómo una tarea fácil y sencilla -_al fin y 
 Brutus hizo un pedido en Beemazon, entre los productos que compró habían un par de cajas de carboncillos de la marca _Beelicious_
 
 
-![](media/beemazon.png)
+![](/media/beemazon.png)
 
 Dos segundos después recibió lo que en un principio creyó que era un correo de confirmación...
 
@@ -184,7 +182,7 @@ Mientras tanto, la idea de intentar adaptar su sistema para comenzar a aplicarlo
 
 Decidió pues consagrar su tiempo a otras edificantes actividades mientras esperaba que su motivación volviera.
 
-![](media/brutus2.png)
+![](/media/brutus2.png)
 
 > La motivación es lo que te hace dar el primer paso del camino, la disciplina es lo que evita que te salgas de él
 

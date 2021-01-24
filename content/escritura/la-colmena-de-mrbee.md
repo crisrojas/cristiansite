@@ -60,7 +60,7 @@ Murmuró con la mirada perdida mientras esbozaba una sonrisa delirante y torcida
 
 Y así, FINALMENTE !!! ... Fracasa una segunda vez. Una tercera y una cuarta...
 
-![La cuarta maqueta de la colmena de Mr.Bee. Nada mal Mr.Bee, nada mal](media/beelearner4.png)
+![La cuarta maqueta de la colmena de Mr.Bee. Nada mal Mr.Bee, nada mal](/media/beelearner4.png)
 
 Tras meses de trabajo, pesadillas y sudores, cansado y queriendo aclarar sus ideas, Mr.Bee decidió dar una vuelta por una colmena vecina: La colmena de *[Jacskson](https://justinjackson.ca)*
 
@@ -85,7 +85,7 @@ Aprendida la lección y con una nueva mentalidad, Mr.Bee volvió a retomar proye
 
 Fue así que Mr. Bee perdió el miedo al error, se deshizo del síndrome del perfeccionita procastinador y vivió feliz por siempre jamás!  
 
-![Primera maqueta de la colmena de Mr.Bee](media/beelearner1.png)
+![Primera maqueta de la colmena de Mr.Bee](/media/beelearner1.png)
 
 _Hoy Mr.Bee da la bienvenida a su colmena a quién quiera que desee pasarse por ella. Hace arreglos y mejoras regularmente, despacito y con buena letra. Siempre con la idea de construir algo muy especial_
 
