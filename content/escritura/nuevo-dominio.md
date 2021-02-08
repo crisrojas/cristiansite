@@ -18,7 +18,7 @@ Puede parecer un capricho —tal vez lo sea—, pero tras esa decisión se escon
 
 Entre ellas —y para que al artículo no se haga más largo de lo necesario— rescato dos:
 
-### La simplicidad es la última sofistcación
+### La simplicidad es la última sofisticación
 
 > La simplicidad es la última sofisticación —Leonardo Da Vinci
 

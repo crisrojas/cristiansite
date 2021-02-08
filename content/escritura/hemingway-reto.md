@@ -9,6 +9,6 @@ Este es mi esfuerzo por realizar el reto de Hemingway que consiste en crear una 
 
 ---
 
-_Editado este mini-artículo el 8 de febrero de 2021 porque me dí cuenta de que quedó bastante triste, aquí va otro intento:_
+_Edito este mini-artículo el 8 de febrero de 2021 porque me di cuenta de que quedó muy triste, aquí va un intento de mejorarlo:_
 
 > Dijo hola al mundo. Entonces sonrió
