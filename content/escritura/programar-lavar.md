@@ -4,7 +4,7 @@ url: "programar-taza"
 date: 2021-01-23
 ---
 
-Recientemente leí el artículo de Leo Babauta: [Lava tu taza](/lava-tu-taza) y me inspiro la siguiente reflexión:
+Recientemente leí el artículo de Leo Babauta: [Lava tu taza](/lava-tu-taza) y me inspiró la siguiente reflexión:
 
 En programación existe una noción llamada prueba unitaria. 
 
