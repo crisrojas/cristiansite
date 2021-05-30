@@ -1,9 +1,10 @@
 ---
 title: Le chevalier Sir Galahad
 date: 2021-03-16
+draft: true
 ---
 
-> ℹ️ Ceci est une traduction de l'histoire de [Jorge Bucay sur le chevalier Sir Galahad](https://www.youtube.com/watch?v=4O216Irjh0M)
+> ℹ️ Ceci est la traduction de l'espagnol de l'histoire de [Jorge Bucay sur le chevalier Sir Galahad](https://www.youtube.com/watch?v=4O216Irjh0M)
 
 L'histoire nous amène à l'époque du roi Arthur et des chevaliers de la Table Ronde, une époque de sorcellerie, de châteaux et de pont-levis.
 
@@ -40,13 +41,13 @@ _Il s'agit de trouver un sorcier plus puissant que celui qui a réalisé le mal�
 
  _Alors il doit certainement avoir dans le royaume un sorcier puissant, mais s'il n'y a pas dans le royaume, j'irai jusqu'au l'autre bout du monde et l'amènerai_ — Dit Galahad
 
-_Que je sache_ — Dit le servant, _Il y a seulement deux personnes suffisamment puissantes pour guérir Arthur: un est Merlin, et même dans le cas où il était trouvable, il prendrait deux semaines à arriver et je ne crois pas que notre roi puisse supporter si long temps_
+_Que je sache_ — Dit le servant, _Il y a seulement deux personnes suffisamment puissantes pour guérir Arthur: l'un est Merlin, et même dans le cas où il était trouvable, il prendrait deux semaines à arriver et je ne crois pas que notre roi puisse supporter si long temps_
 
 _Et l'autre personne?_
 
 Le vieux servant baissa la tête en la mouvant de coté à coté:
 
-_L'autre personne et la sourcier de la Montagne, mais même s'il y avait quelqu'un de suffisamment courageux pour aller la chercher, chose douteuse, elle ne viendrais jamais guérir le roi qui l'a expulsé du palais il y si long temps_
+_L'autre personne et la sorcière de la Montagne, mais même s'il y avait quelqu'un de suffisamment courageux pour aller la chercher, chose douteuse, elle ne viendrais jamais guérir le roi qui l'a expulsé du palais il y a si long temps..._
 
 La réputation de la sorcière était vraiment sinistre, on savait qu'elle était capable de faire du plus brave guerrier son esclave rien qu'avec le regard.
 
@@ -58,7 +59,7 @@ Arthur était le meilleur ami que Galahad avait jamais eu. Ils avaient combattu 
 
 Galahad porta son armure, et en montant son cheval se dirigea à la Montagne Noire où se trouva la cave de la sorcière.
 
-Dès qu'i traversa la rivière, il réalisa que le ciel commençais à s'obscurcir. Dès nuages opaques et denses semblaient ancrés au bord de la montagne. 
+Dès qu'il traversa la rivière, il réalisa que le ciel commençais à s'obscurcir. Dès nuages opaques et denses semblaient ancrés au bord de la montagne. 
 
 À son arrive, la nuit semblait avoir tombé en pleine journée. Galahad, descendit de sa monture et marcha à travers un trou dans la pierre.
 
@@ -78,13 +79,15 @@ Dès que Galahad rentra, sans même pas lui regarder, la sorcière cria:
 
 _Pars d'ici immédiatement avant que je te transforme en grenouille ou en quelque chose de pire!_
 
-_Mais, je suis venu te chercher_ — Dit Galahad, _J'ai besoin d'aide pour mon ami. Il est très malade_
+_Mais, je suis venu te chercher_ — Dit Galahad, _J'ai besoin d'aide pour sauver mon ami. Il est très malade_
 
 _Hehehehe_ —Ris la sorcière, _Le roi est ensorcelé, et malgré le fait que ce n'était pas moi qui a lancé le maléfice, il n'existe rien que tu puisse faire pour éviter sa mort_
 
 _Mais, tu...tu est plus puissant que celui ayant fait le maléfice, tu pourrait lui sauver!_ — Répondit Galahad
 
 _Pourquoi ferai-je une telle chose?_ —Demanda la sorcière alors qu'elle se rappelait avec rancune l'affront du roi.
+
+<!--@todo: l'affront que le roi lui avait fait --->
 
 _Pour ce que tu me demanderas_ —Dit Galahad. _Je m'occuperait personnellement qu'on te paie le prix que tu exigeras_
 
@@ -94,7 +97,7 @@ Même avec la faiblesse des cires, Galahad était incroyablement charmant, ce qu
 
 La sorcière lui regarda du coin de l'oeil une fois de plus, et annonça:
 
-_Le prix est le suivant: Si je guéri le roi, et seulement si je le fais...—
+_Le prix est le suivant: Si je guéri le roi, et seulement si je le fais..._
 
 _Ce que tu demanderas_ —Dit Galahad
 
@@ -118,7 +121,7 @@ En s'ouvrant le pas à travers du peuple de la forteresse, qui chuchotais incré
 
 Avec sa main, il empêcha que la sorcière descende par elle même, et se pressai à lui donner son bras pour lui aider. Elle fut surpris et lui regarda avec un regard presque sarcastique.
 
-_Si tu vas être mon épouse, il est convenable que tu commence à être traité ainsi_
+_Si tu vas être mon épouse, il est convenable que tu commences à être traité ainsi_
 
 En lui tenant par le bras, la sorcière rentra dans la chambre royale.
 
