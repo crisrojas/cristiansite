@@ -1,0 +1,70 @@
+{{ define "main" }}
+{{ partial "back.html" }}
+
+{{ $url := "https://opensheet.vercel.app/16V1mznYSOkj5UlO-RYzyBquMt99WzEojOy3VxGoTVuw/tab" }}
+<style>
+[x-cloak] {
+	  display: none !important;
+	}
+.m0 {
+	margin: 0;
+}
+</style>
+
+<h3 class="font-bold font-sans text-2xl">Niveles de poder</h3>
+<div
+	x-cloak
+	x-data="{data: [], 'isLoading': true}"
+	x-init="fetch('{{ $url }}')
+	.then(response => response.json())
+	.then(response => { data = response; isLoading = false; console.log(response); })"
+>
+
+<h1 x-show="isLoading" style="margin-top:24px">Loading...</h1>
+
+<template x-show="!isLoading" x-for="item in data">
+<hstack 
+x-data="{
+src: '/power-levels/' + item.level + '.png'
+}"
+spacing="s"
+class="mt-12">
+	  <img 
+	  width="48" 
+	  :src="src"
+	  class="rounded-xl shadow-xl border-4"
+	  >
+	 <vstack>
+	  <hstack>
+		  <p class="m0 font-bold font-sans pr-2" x-text="item.emoji"></p>
+		  <p class="m0 font-bold font-sans" x-text="item.item"></p>
+		  <spacer></spacer>
+		  <p class="m0 text-xs font-bold font-sans text-gray-600" x-text="item.current_value"></p>
+		  <p class="m0 text-xs font-bold font-sans text-gray-600">/</p>
+		  <p class="m0 text-xs font-bold font-sans text-gray-600" x-text="item.goal"></p>
+	  </hstack>
+	  <div class="relative pt-1">
+			<div x-data="{percent: item.progress}" class="overflow-hidden h-2 text-xs flex rounded bg-blue-200">
+			  <div
+				:style="`width: ${percent}%`"
+				class="
+				  shadow-none
+				  flex flex-col
+				  text-center
+				  whitespace-nowrap
+				  text-white
+				  justify-center
+				  bg-blue-500
+				"
+			  ></div>
+			</div>
+		  </div>
+	 </vstack>
+	</hstack>
+</template>
+
+</div>
+
+
+
+{{ end }}

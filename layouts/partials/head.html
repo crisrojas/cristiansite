@@ -17,6 +17,16 @@
 	<title>
 		{{ $title }} | {{ $siteTitle }}
 	</title>
+	
+	{{ if .Params.tailwind }}
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	{{ end }}
+	
+	{{ if .Params.pylon }}
+	
+	<link rel="stylesheet" href="https://unpkg.com/pyloncss@latest/css/pylon.css"/>
+	
+	{{ end }}
 	<style>
 		blockquote { margin: 0 }
 		
@@ -108,8 +118,10 @@
 		
 		img {
 			display: block;
-			margin: auto;
+			/* margin: auto; */
 			max-width: 100%;
 		}
 	</style>
+	
+	<script src="//unpkg.com/alpinejs" defer></script>
 </head>
