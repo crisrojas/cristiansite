@@ -1,70 +1,96 @@
 {{ define "main" }}
-{{ partial "back.html" }}
 
-{{ $url := "https://opensheet.vercel.app/16V1mznYSOkj5UlO-RYzyBquMt99WzEojOy3VxGoTVuw/tab" }}
+{{ partial "back.html" }}
 
 <h3 class="font-bold font-sans text-2xl">{{ .Title }}</h3>
 
 {{ .Content }}
 
 <div
-	x-cloak
-	x-data="{goals: [], 'isLoading': true}"
-	x-init="fetch('{{ $url }}')
+  x-cloak
+  x-data="{
+		goals: [], 
+		isLoading: true, 
+		id: new URLSearchParams(window.location.search).get('id')
+	}"
+  x-init="
+	fetch('https://opensheet.vercel.app/' + id + '/tab')
 	.then(response => response.json())
-	.then(response => { goals = response; isLoading = false; console.log(response); })"
->
+	.then(response => { goals = response; isLoading = false; console.log(id); })
+	">
+  <h1 x-show="isLoading">
+    Cargando hoja de cálculo...
+  </h1>
 
-<h1 x-show="isLoading" style="margin-top:24px">Cargando hoja de cálculo...</h1>
-
-<list spacing="l">
-<template x-show="!isLoading" x-for="goal in goals">
-<hstack 
-x-data="{
-src: '/power-levels/' + goal.level + '.png'
-}"
-spacing="s"
-class="mt-12">
-	  <figure class="relative" class="grid justify-items-center">
-		  <figcaption
-		   class="font-sans text-xs mt-2 absolute bg-white border-white shadow rounded-full font-bold p-1 text-black -top-5 right-0"
-		   x-text="'Nvl ' + goal.level">
-	   </figcaption>
-		  <img 
-			width="48" 
-			:src="src"
-			class="rounded-xl shadow border-2 border-white"
-			>
-	  </figure>
-	 <vstack spacing="xxs">
-	  <hstack>
-		  <p class="m0 font-bold font-sans text-sm pr-2" x-text="goal.emoji"></p>
-		  <p class="m0 font-bold font-sans text-sm" x-text="goal.item"></p>
-		  <spacer></spacer>
-		  <p class="m0 text-xs font-bold font-sans text-gray-600" x-text="goal.current_value"></p>
-		  <p class="m0 text-xs font-bold font-sans text-gray-600">/</p>
-		  <p class="m0 text-xs font-bold font-sans text-gray-600" x-text="goal.goal"></p>
-	  </hstack>
-	  <div class="relative pt-1">
-			<div 
-			class="overflow-hidden h-3 flex rounded-lg bg-white border-2">
-			  <div
-				:style="`width: ${goal.progress}%`"
-				class="
-				  flex
-				  flex-col
-				  bg-blue-500
-				"
-			  ></div>
-			</div>
-		  </div>
-		
-	 </vstack>
-	</hstack>
-
-</template>
-</list>
-
+  <list spacing="l">
+    <template x-show="!isLoading" x-for="goal in goals">
+      <hstack
+        x-data="{
+		src: '/power-levels/' + goal.level + '.png'
+		}"
+        spacing="s"
+      >
+        <figure class="relative" class="grid justify-items-center">
+          <figcaption
+            class="
+              font-sans
+              text-xs
+              mt-2
+              absolute
+              bg-white
+              border-white
+              shadow
+              rounded-full
+              font-bold
+              p-1
+              text-black
+              -top-5
+              right-0
+            "
+            x-text="'Nvl ' + goal.level"
+          ></figcaption>
+          <img
+            width="48"
+            :src="src"
+            class="rounded-xl shadow border-2 border-white"
+          />
+        </figure>
+        <vstack spacing="xxs">
+          <hstack>
+            <p
+              class="m0 font-bold font-sans text-sm pr-2"
+              x-text="goal.emoji"
+            ></p>
+            <p class="m0 font-bold font-sans text-sm" x-text="goal.item"></p>
+            <spacer></spacer>
+            <p
+              class="m0 text-xs font-bold font-sans text-gray-600"
+              x-text="goal.current_value"
+            ></p>
+            <p class="m0 text-xs font-bold font-sans text-gray-600">/</p>
+            <p
+              class="m0 text-xs font-bold font-sans text-gray-600"
+              x-text="goal.goal"
+            ></p>
+          </hstack>
+          <div class="relative pt-1">
+            <div class="overflow-hidden h-3 flex rounded-lg bg-white border-2">
+              <div
+                :style="`width: ${goal.progress}%`"
+                class="flex flex-col bg-blue-500"
+              ></div>
+            </div>
+          </div>
+        </vstack>
+      </hstack>
+    </template>
+  </list>
 </div>
+
+<script>
+  var routing = function () {
+    let urlSource = new URLSearchParams(window.location.search).get("title");
+  };
+</script>
 
 {{ end }}
