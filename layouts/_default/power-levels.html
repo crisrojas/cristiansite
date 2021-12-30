@@ -14,7 +14,7 @@
 		id: new URLSearchParams(window.location.search).get('id')
 	}"
   x-init="
-	fetch('https://opensheet.vercel.app/' + id + '/tab')
+	fetch('https://opensheet.elk.sh/' + id + '/tab')
 	.then(response => response.json())
 	.then(response => { goals = response; isLoading = false; console.log(id); })
 	">
