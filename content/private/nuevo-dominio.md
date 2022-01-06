@@ -1,6 +1,7 @@
 ---
 title: Nuevo dominio
 date: 2020-12-13
+draft: true
 ---
 
 En mi búsqueda por hacerme un hueco en internet, he llegado a tener muchos dominios, algunos ejemplos:
