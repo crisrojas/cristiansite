@@ -1,5 +1,6 @@
 ---
 title: Lista de deseos
+draft: true
 ---
 
 Soy complicadito para los regalos. Para evitarnos problemas y futuras decepciones, aquí tienes una guía para regalarme algo bueno, bonito y que te salga barato en navidades o en mi cumpleaños.
