@@ -5,3 +5,4 @@ node_modules
 .nova
 Trash
 .hugo_build.lock
+/public

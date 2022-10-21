@@ -11,3 +11,13 @@ publishDir = "public"
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]
 unsafe= true
+
+[module]
+
+[[module.imports]]
+path = "github.com/crisrojas/cristianlat-content"
+disabled = false
+
+[[module.imports.mounts]]
+source = "content"
+target = "content"
