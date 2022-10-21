@@ -6,3 +6,5 @@ node_modules
 Trash
 .hugo_build.lock
 /public
+go.mod
+go.sum
