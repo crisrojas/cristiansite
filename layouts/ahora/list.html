@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ partial "back.html" }}
+
+{{ .Content | safeHTML }}
+
+{{ range ( where site.RegularPages "Section" .Section | first 1 ) }}
+{{ .Content }}
+{{ end }}
+
+
+<h3>Historial</h3>
+{{ range where .Site.RegularPages "Section" .Section }}
+<p class="article-title"><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a></p>
+{{ end }}
+
+<style>
+.article-title {
+	font-size: 14px;
+	font-weight: bold;
+}
+.article-title + .article-title {
+	margin: 0px;
+}
+</style>
+
+{{ end }}

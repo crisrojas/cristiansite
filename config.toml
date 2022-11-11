@@ -12,8 +12,12 @@ publishDir = "public"
 [markup.goldmark.renderer]
 unsafe= true
 
-[module]
+[markup]
+[markup.highlight]
+	codeFences = false
 
+
+[module]
 [[module.imports]]
 path = "github.com/crisrojas/cristianlat-content"
 disabled = false

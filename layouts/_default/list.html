@@ -6,8 +6,8 @@
 {{ .Content | safeHTML }}
 
 {{ range where .Site.RegularPages "Section" .Section }}
-<p class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></p>
-<p class="article-date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+<p class="article-title"><a href="{{ .Permalink }}"><span class="article-date">{{ dateFormat "Jan 2, 2006" .Date }}</span> {{ .Title }}</a></p>
+
 {{ end }}
 
 <style>
@@ -15,8 +15,18 @@
 	font-size: 18px;
 	font-weight: bold;
 }
+.article-title > a {
+	text-decoration: none;
+	font-family: sans-serif
+}
 .article-date {
-	font-size: 12px;
+	font-size: 10px;
+	background: rgba(233, 225, 211, 1);
+	border-radius: 6px;
+	padding: 4px;
+	font-family: sans-serif;
+	font-weight: normal;
+	margin-right: 4px;
 }
 .article-title + .article-date {
 	margin: 0px;
