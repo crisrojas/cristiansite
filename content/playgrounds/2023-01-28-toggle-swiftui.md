@@ -3,7 +3,7 @@
 #swiftui
 
 <video controls autoplay muted loop playsinline>
-	<source src="playgrounds/media/2023-28-01-pull-to-refresh-things.mov" type="video/mp4">
+	<source src="media/2023-28-01-pull-to-refresh-things.mov" type="video/mp4">
 </video>
 
 Things I learned:
