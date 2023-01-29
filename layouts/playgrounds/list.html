@@ -7,7 +7,7 @@
 		
 		{{ $date := substr .File.ContentBaseName 0 10 }}
 		
-			<time datetime="{{ $date }}">{{ $date | time.Format "January 2, 2006" }}</time> 
+			 <time datetime="{{ $date }}">{{ $date }}</time> 
 	
 		{{ .Content }}
 		
