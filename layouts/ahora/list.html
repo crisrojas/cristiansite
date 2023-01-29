@@ -4,24 +4,35 @@
 
 {{ .Content | safeHTML }}
 
-{{ range ( where site.RegularPages "Section" .Section | first 1 ) }}
-{{ .Content }}
-{{ end }}
-
-
-<h3>Historial</h3>
-{{ range where .Site.RegularPages "Section" .Section }}
-<p class="article-title"><a href="{{ .Permalink }}">{{ .File.BaseFileName }}</a></p>
+{{ range (where .Site.RegularPages "Section" .Section) }}
+	
+	<article>
+	
+		<h3 class="article-title"><a href="{{ .Permalink }}">	<time  dateTime={{ .File.ContentBaseName }} class="article-date">{{ dateFormat "Jan 2, 2006" .File.ContentBaseName }}</time> </a></h3>
+		
+		{{ .Content }}
+	</article>
 {{ end }}
 
 <style>
-.article-title {
-	font-size: 14px;
-	font-weight: bold;
+	
+body {
+	max-width: 44ch;
+	margin: auto;
+	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+	color: #44474b;
+	padding-top: 48px;
+	padding-bottom: 96px;
+	line-height: 22px;
 }
-.article-title + .article-title {
-	margin: 0px;
-}
+
+a { color: #2c3138 ; text-decoration: none }
+h3 { font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; }
+h3 { font-size: 16px }
+time + h3 { margin: 0px }
+time + h3 { margin-bottom:  2px }
+article { margin-top: 44px; }
+
 </style>
 
 {{ end }}

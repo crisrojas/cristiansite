@@ -4,4 +4,40 @@
 {{ $c := .Content | replaceRE "—([^/]+?)—" "<em>—$1—</em>" }}
 {{ $c := $c | replaceRE "::([^/]+)::" "<mark>$1</mark>" }}
 {{ $c | safeHTML }}
+
+<style>
+	
+	body {
+		max-width: 44ch;
+		margin: auto;
+		font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+		color: #44474b;
+		padding-top: 48px;
+		padding-bottom: 96px;
+		line-height: 22px;
+		font-size: 17px;
+	}
+	
+	blockquote { border-left: 2px solid #2c3138; margin: 0px ; padding-left: 24px }
+	blockquote { font-style: italic }
+	
+	h1, h2, h3, h4, h5, h6 {
+	 font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	 margin-top: 44px;
+	}
+	
+	h1 { line-height: 36px }
+	h1 { margin-bottom: 96px }
+	
+	a { color: #2c3138 }
+	
+	blockquote + p,
+	p + blockquote,
+	p + p { margin-top: 34px; }
+	
+	
+	img { max-width: 44ch; margin: auto; display: block ; border-radius: 4px }
+
+	
+</style>
 {{ end }}

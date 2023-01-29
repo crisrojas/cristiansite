@@ -17,12 +17,12 @@ unsafe= true
 	codeFences = false
 
 
-[module]
-[[module.imports]]
-path = "github.com/crisrojas/cristianlat-content"
-disabled = false
-
-[[module.imports.mounts]]
-source = "content"
-target = "content"
+##[module]
+##[[module.imports]]
+##path = "github.com/crisrojas/cristianlat-content"
+##disabled = false
+##
+##[[module.imports.mounts]]
+##source = "content"
+##target = "content"
 
