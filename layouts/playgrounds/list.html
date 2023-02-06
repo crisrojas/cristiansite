@@ -2,7 +2,8 @@
 <h1>Playgrounds</h1>
 <p>Concept taken from <a href="https://samvlu.com">100 days of Swift</a></p>
 <main>
-	{{ range where .Site.RegularPages "Section" .Section }}
+	{{ $pages := where site.RegularPages "Section" .Section }}
+	{{ range ($pages.ByParam "ContentBaseName").Reverse }}
 	<article id="{{ .File.ContentBaseName }}">
 		
 		{{ $date := substr .File.ContentBaseName 0 10 }}
@@ -12,9 +13,7 @@
 		{{ .Content }}
 		
 	</article>
-	
 	{{ end }}
-
 </main>
 
 <style>
