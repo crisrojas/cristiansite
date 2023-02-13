@@ -1,0 +1,19 @@
+	
+<section id="webpens">
+	
+  {{ if .showButton }}
+  <a class="button" href="/webpens">See all <span>→</span></a>
+  
+  {{ end }}
+{{ $files := readDir "/content/webpens" }}
+
+{{ range ($files) }}
+  {{ $shouldRender := strings.Contains .Name "html" }}
+  {{ if $shouldRender }}
+ <article>
+	 <iframe src=webpens/{{ .Name }}></iframe>
+ </article>
+  {{ end }}
+
+{{ end }}
+</section>

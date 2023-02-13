@@ -11,11 +11,11 @@ publishDir = "public"
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]
 unsafe= true
+assetsDir = "assets"
 
 [markup]
 [markup.highlight]
 	codeFences = false
-
 
 ##[module]
 ##[[module.imports]]

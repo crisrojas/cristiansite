@@ -1,0 +1,17 @@
+<section id="writing">
+	
+	{{ if .showButton }}
+	<a class="button" href="escritura">See all <span>→</span></a>
+	
+	{{ end }}
+<!-- <h3>Writing</h3> -->
+{{ $thoughts := where site.RegularPages "Section" "escritura" }}
+{{ range last 3 $thoughts }}
+<a href="{{ .Permalink }}">
+	<article class="post">
+		<h4>{{ .Title }}</h4>
+		{{ .Content }}
+	</article>
+</a>
+{{ end }}
+</section>

@@ -1,0 +1,34 @@
+<h1>Web playgrounds</h1>
+
+
+{{ $files := readDir "/content/webpens" }}
+
+{{ range ($files) }}
+  {{ $shouldRender := strings.Contains .Name "html" }}
+  {{ if $shouldRender }}
+  <a href="{{ .Name }}">{{ .Name }}</a>
+  <iframe src={{ .Name }}></iframe>
+  
+  {{ end }}
+
+{{ end }}
+
+<style>
+	
+	body {
+		max-width: 600px;
+		margin: auto;
+		padding: 20px;
+	}
+	
+	iframe { 
+		border: none;
+		width: 100%;
+		background: gray;
+		height: 400px;
+		margin-bottom: 24px;
+		border-radius: 6px;
+	}
+	
+	
+</style>

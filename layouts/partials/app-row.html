@@ -1,0 +1,24 @@
+<li class="sans-serif transparent" style="display: flex; align-items: center; justify-content: space-between; font-size: 12px">
+	
+	<div style="display: flex; align-items: center; font-weight: bold" >
+		<img src="prodev/{{ .img }}.png">{{ .name }}
+	</div>
+	<!-- <div style="font-size: 12px">MVVM, CoreData, Moya, SwiftUI <span style="font-size: 18px">→</span>
+	<div>Test</div> -->
+	<div style="font-style: italic">{{ .stack }}</div>
+	
+	<div>
+		
+		
+		
+		{{ if not (eq .id nil) }}
+		
+		<a style="display: flex; align-items: center" href="https://apps.apple.com/app/apple-store/id{{ .id }}"><span style="margin: 0 6px; display: inline-block; width: 6px; height: 6px; background: #22c55e;border-radius: 99px"></span>App Store →</a>
+		{{ else }}
+		<a style="display: flex; align-items: center; cursor: not-allowed" href=""><span style="margin: 0 6px; display: inline-block; width: 6px; height: 6px; background: #eab308;border-radius: 99px"></span>App Store →</a>
+		{{ end }}
+		
+	</div>
+
+</li>
+

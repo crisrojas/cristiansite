@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+{{ $section := (where .Site.RegularPages "Section" .Section).ByDate }}
+
+
+{{ range last 1 $section }}
+ <article class="post">
+	 <h3>{{ .Title }}</h3>
+	 {{ .Content }}
+ </article>
+{{ end }}
+
+
+{{ partial "archive" . }}
+
+
+{{ end }}
+

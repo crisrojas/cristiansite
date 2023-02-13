@@ -1,0 +1,18 @@
+	
+<section id="illustrations">
+{{ if .showButton }}
+<a class="button" href="/illustrations">See all <span>→</span></a>
+
+{{ end }}
+{{ $files := readDir "/content/illustrations" }}
+{{ range last 4 ($files) }}
+<article>
+	
+	{{ $isMarkdownFile := strings.Contains .Name "md" }}
+	
+	{{ if not $isMarkdownFile }}
+	<img src="illustrations/{{ .Name }}" />
+	{{ end }}
+</article>
+{{ end }}
+</section>

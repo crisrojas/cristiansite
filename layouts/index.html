@@ -1,3 +1,67 @@
 {{ define "main" }}
-	{{ .Content | safeHTML }}
+
+	<header>
+		<a href="/" class="sans-serif antialiased black weight500">Cristian F. Patiño Rojas</a>
+		<p class="sans-serif antialiased gray weight500">iOS dev, Son & Catholic Christian</p>
+	</header>
+	
+	
+	<article class="header" style="line-height: 1.5">
+	
+	<p>iOS dev with a crush on web frontend and UI, and other things.</p>
+	<p>Here's an emoji of a water pistol because no reason 🔫, piu piu.</p>
+	<!-- <mark><a href="">hi@cristian.lat</a></mark> -->
+	</article>
+	<hr>
+	
+
+
+	<section class="sections">
+		<input type="radio" name="tabs" id="tab1" checked />
+		<label class="filter" for="tab1">All</label>
+		
+		<input type="radio" name="tabs" id="tab8" />
+		<label class="filter" for="tab8">Professional work</label>
+		
+		<input type="radio" name="tabs" id="tab2" />
+		<label class="filter" for="tab2">Personal projects</label>
+			
+		<input type="radio" name="tabs" id="tab4" />
+		<label class="filter" for="tab4">iOS Pens</label>
+		
+		<input type="radio" name="tabs" id="tab5" />
+		<label class="filter" for="tab5">Web Pens</label>
+		
+		
+		
+		<input type="radio" name="tabs" id="tab3" />
+		<label class="filter" for="tab3">Illustration</label>
+	
+		
+		<input type="radio" name="tabs" id="tab6" />
+		<label class="filter" for="tab6">Writing</label>
+		
+		<input type="radio" name="tabs" id="tab7" />
+		<label class="filter" for="tab7">Music</label>
+		
+		
+		<div class="tab content1">
+			
+			{{ partial "home-sections/all" }}
+		</div>
+		<div class="tab content2">
+			{{ partial "home-sections/personaldev" (dict "context" .  "showButton" true) }}
+		</div>
+		<div class="tab content3">{{ partial "home-sections/illustrations" (dict "context" .  "showButton" true) }} </div>
+		<div class="tab content4">{{ partial "home-sections/iospens" (dict "context" .  "showButton" true) }}</div>
+		<div class="tab content5">{{ partial "home-sections/webpens" (dict "context" .  "showButton" true) }}</div>
+		<div class="tab content6">
+			<div class="featured">
+				{{ partial "home-sections/writing" (dict "context" .  "showButton" true) }}
+			</div>
+		</div>
+		<div class="tab content7">{{ partial "home-sections/music" (dict "context" .  "showButton" true) }}</div>
+		<div class="tab content8">{{ partial "home-sections/professional" (dict "context" .  "showButton" true) }}</div>
+	</section>
+
 {{ end }}

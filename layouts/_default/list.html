@@ -7,11 +7,16 @@
 
 {{ range where .Site.RegularPages "Section" .Section }}
 	
+	
+	<a href="{{ .Permalink }}">{{ .File.ContentBaseName }}</a>
 	<article>
 		<time  dateTime={{ .Date }} class="article-date">{{ dateFormat "Jan 2, 2006" .Date }}</time> 
 		<h3 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 	</article>
 {{ end }}
+
+
+
 
 <style>
 	
