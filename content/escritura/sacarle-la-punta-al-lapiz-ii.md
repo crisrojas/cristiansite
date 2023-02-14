@@ -1,6 +1,5 @@
 ---
 title: Sacarle la punta al lápiz 2
-type: blog
 tags: ["escritura"]
 date: 2019-01-23
 ---

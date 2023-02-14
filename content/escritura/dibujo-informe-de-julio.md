@@ -2,7 +2,6 @@
 title: Dibujo, informe de julio
 date: 2019-08-02
 tags: ["dibujo"]
-type: "blog"
 featured: true
 ---
 Julio ha sido un mes tranquilo — sí, es un eufemismo para decir que no he sido productivo —.

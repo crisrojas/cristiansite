@@ -1,7 +1,6 @@
 ---
 title: La colmena de Mr.Bee
 date: 2018-08-13
-type: blog
 tags: ["escritura"]
 ---
 

@@ -2,7 +2,6 @@
 title: '¿Es posible erradicar el mal a través de la educación?'
 date: 2020-07-05
 position: "Wannabe philosopher"
-type: blog
 tags: ["preguntas"]
 ---
  

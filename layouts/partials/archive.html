@@ -1,5 +1,5 @@
 <nav>
-{{ $section := (where .Site.RegularPages "Section" .Section).ByDate }}
+{{ $section := (where .Site.RegularPages "Section" "escritura").ByDate }}
   {{ $.Scratch.Set "count" 1 }}
 
   {{ range ($section.GroupByDate "2006") }}

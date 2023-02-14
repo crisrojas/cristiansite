@@ -1,6 +1,5 @@
 ---
 title: 'Zettels: Hugo Zettelkästen theme'
-type: blog
 tags: ["webdev"]
 date: 2020-06-29
 ---

@@ -2,7 +2,6 @@
 title: Sacarle la punta al lápiz
 date: 2019-01-18
 tags: ["escritura"]
-type: blog
 ---
 
 Érase una vez, en el lejano reino de **Honey Pot**, dos estudiantes de arte que comenzaban sus estudios en el prestigioso taller Leonardo.

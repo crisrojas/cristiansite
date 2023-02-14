@@ -555,7 +555,39 @@
 	 font-family: var(--font-sans);
 	 margin-bottom: var(--spacing-xxl)
  }
+ 
+ .small-circle {
+	 background: #22c55e;
+	 width: 6px;
+	 height: 6px;
+	 border-radius: 99px;
+	 display: inline-block;
+	 margin-right: 6px
+ }
 
+.work-banner {
+	/* position: fixed;  */
+	z-index: 100; 
+	/* bottom: 12px; */
+	width: 480px;
+	background: white;
+	padding: 12px;
+	border: 1px solid var(--tl);
+	font-size: 12px; 
+	border-radius: 6px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.social {
+	margin-top: var(--spacing);
+	text-align: center;
+}
+.social svg {
+	margin-right: 16px;
+}
+.social svg:hover {
+	opacity: 0.5
+}
 @media(max-width: 500px) {
 	 .row-stack {
 		display: none;	 

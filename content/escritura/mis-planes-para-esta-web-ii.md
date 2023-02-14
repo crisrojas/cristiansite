@@ -1,8 +1,6 @@
 ---
 title: Mis planes para esta web II
 date: 2020-07-18
-type: blog
-position: dreamer
 ---
 
 

@@ -2,7 +2,6 @@
 title: Un blog en HTML puro
 date: 2020-05-01
 tags: ["webdev"]
-type: blog
 ---
 
 <div class="information-block">

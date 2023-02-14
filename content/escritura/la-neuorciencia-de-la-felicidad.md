@@ -2,7 +2,6 @@
 title: La neurociencia de la felicidad
 date: 2019-01-30
 tags: ["divulgación"]
-type: blog
 ---
 
 Este es Timmy
