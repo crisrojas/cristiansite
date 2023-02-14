@@ -58,8 +58,8 @@
 		/* moreale */
 		--bg: #fff;
 		--bgl: #f7f7f7;
-		--h: #ffec3d66;
-		--hl: #ffec3de6;
+		--h: rgba(175, 148, 101, 0.5);
+		--hl: rgba(175, 148, 101, 1);
 		--t: #444;
 		--tm: #888;
 		--tl: #f2f2f2;
@@ -86,7 +86,7 @@
 		/* Chimero */
 		
 	
-			--color-bg: #242120;
+			/* --color-bg: #242120; */
 			--color-highlight: #F8F6F5;
 			--color-default: #BAB6B1;
 			--color-dim: #797673;
@@ -235,7 +235,8 @@
 	
 	body {
 		width: 480px;
-		margin: 3vw auto
+		margin: 3vw auto;
+		background: var(--color-bg)
 	}
 	
 
@@ -351,6 +352,7 @@
 	  display: inline-block;
 	  position: absolute;
 	  left: -19px;
+	  top: 4px;
 	  font-family: 'Palatino';
 	  font-size: 14px;
   /* 	margin-right: 1em; */
@@ -547,4 +549,15 @@
 	 box-shadow: 3px 6px 21px 5px #e6e6e6;
 	 border: 1px solid rgba(233, 225, 211, 1);
  }
-	
+ 
+ .h1-sans {
+	 font-weight: bolder;
+	 font-family: var(--font-sans);
+	 margin-bottom: var(--spacing-xxl)
+ }
+
+@media(max-width: 500px) {
+	 .row-stack {
+		display: none;	 
+	 }
+ }

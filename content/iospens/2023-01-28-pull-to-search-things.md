@@ -1,12 +1,3 @@
-### 1. Things pull to search
-
-#swiftui
-
-
-<video controls autoplay muted loop playsinline>
-	<source src="media/2023-28-01-pull-to-search-things.mov" type="video/mp4">
-</video>
-
 Things I learned:
 
 - ScrollView is very limited and doesn't allow tracking of any useful event

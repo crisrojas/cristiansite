@@ -5,20 +5,41 @@
 	<a class="button" href="#">Coming soon <span>→</span></a>
 	{{ end }} -->
 	
-	<p style="font-weight: bold; margin-bottom: 12px">Bearkit</p>
-	<p style="line-height: 1.5">Read-only  web-frontend for the <a class="link" href="//bear.app">Bear app</a> for publishing all my notes at once 😎</p>
-	<ul class="project-list">
-		<li>SvelteKit + some Vanilla JS</li>
-		<li>Bear database + BetterSQLite</li>
-		<li>Vanilla CSS + some PylonCSS</li>
-		<li>Deployed on <a class="link" href="//railway.app">Railway</a></li>
-	</ul>
 	
-	<p style="margin-bottom: 24px">Live at <a class="link" href="https://notas.cristian.lat">Notas.Cristian</a></p>
-	<iframe class="phone" width="100%" style="aspect-ratio: 375 / 667" src="//notas.cristian.lat"></iframe>
+	<div class="devproject">
+	
+		<p style="font-weight: bold; margin-bottom: 12px">Bearkit</p>
+		<p style="line-height: 1.5">Read-only <a class="link" href="//bear.app">Bear app</a> web-client for publishing all my notes at once 😎</p>
+		<ul class="project-list">
+			<li>SvelteKit + some Vanilla JS</li>
+			<li>Bear database + BetterSQLite</li>
+			<li>Vanilla CSS + some PylonCSS</li>
+			<li>Deployed on <a class="link" href="//railway.app">Railway</a></li>
+		</ul>
+		
+		<p style="margin-bottom: 24px">Live at <a class="link" href="https://notas.cristian.lat">Notas.Cristian</a>. Interact with <span style="font-family: var(--font-sans)">↓</span></p>
+		<iframe class="phone" width="100%" style="aspect-ratio: 375 / 667" src="//notas.cristian.lat"></iframe>
+		
+		<style>
+			.project-list li { margin-bottom: 6px }
+		</style>
+
+
+	</div>
+	
+	<div class="devproject">
+		
+			<p style="font-weight: bold; margin-bottom: 12px">Old web resume</p>
+			<p style="line-height: 1.5; margin-bottom: 6px">Old web cv I did in 2020 when I was searching to get my first dev job. <a class="link" href="https://crisrojas.vercel.app">Looks better on desktop</a></p>
+			<iframe class="phone" width="100%" style="aspect-ratio: 375 / 667" src="https://crisrojas.vercel.app"></iframe>
+			
+	
+	</div>
+
 	
 	<style>
-		.project-list li { margin-bottom: 6px }
+		.devproject {
+			margin-bottom: var(--spacing-xxl)
+		}
 	</style>
-	
 </section>

@@ -3,6 +3,7 @@ title: El potencial de los objetivos numéricos
 date: 2019-08-07
 tags: ["objetivos"]
 type: blog
+featured: true
 ---
 
 Estás en el punto A.

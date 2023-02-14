@@ -1,7 +1,5 @@
 {{ define "main" }}
 
-{{ partial "back.html" }}
-<h3>Entradas</h3>
 
 {{ .Content | safeHTML }}
 
@@ -18,30 +16,5 @@
 
 
 
-<style>
-	
-body {
-	max-width: 44ch;
-	margin: auto;
-	font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-	color: #44474b;
-	padding-top: 48px;
-	padding-bottom: 96px;
-	line-height: 22px;
-}
-
-	time { 
-	color: rgb(130, 130, 130);
-	font-size: 14px;
-	} 
-
-a { color: #2c3138 ; text-decoration: none }
-h3 { font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; }
-h3 { font-size: 16px }
-time + h3 { margin: 0px }
-time + h3 { margin-bottom:  2px }
-article { margin-top: 32px; }
-
-</style>
 
 {{ end }}

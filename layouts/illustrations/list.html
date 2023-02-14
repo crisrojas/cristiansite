@@ -1,19 +1,59 @@
 {{ define "main" }}
-{{ $files := readDir "/content/illustrations" }}
 
-{{ range ($files) }}
-{{ $isDir := .IsDir }}
-{{ $isMarkdownFile := strings.Contains .Name "md" }}
-{{ $isDSStore := strings.Contains .Name "DS_Store" }}
+{{ $files := readDir "/assets/art" }}
+{{ $files := partial "reverse-slice" $files }}
+{{- $.Scratch.Add "data" slice -}}
 
-{{ if and (not $isMarkdownFile)  (not $isDSStore)  (not $isDir)}}
-<img src="illustrations/{{ .Name }}" />
+{{ range $files }}
+
+{{ $nameCount := countwords .Name }}
+{{ $date := substr .Name 0 10 }}
+{{ $name := strings.TrimSuffix (path.Ext .Name) .Name }}
+{{ $name := substr $name 11 }}
+{{ $a := "/art/" }}
+{{ $b := .Name }}
+{{ $c := "" }}
+{{ $a := printf "%s" $c | printf "%s%s" $b | printf "%s%s" $a | printf "%s"}}
+{{ $.Scratch.Add "data" (dict "path" $a "date" $date "name" $name) }}
 {{ end }}
+{{- $data := $.Scratch.Get "data" -}}
+
+{{ range ($data) }}
+<article class="post">
+  
+  <h3>{{ .name }}</h3>
+  {{ $img := resources.Get .path }}
+  {{ $thumbnail := $img.Resize "600x" }}
+  <time>{{ .date }}</time>
+ <a href="{{ $img.RelPermalink}}"><img loading="lazy" src="{{ $thumbnail.RelPermalink }}" /></a>
+</article>
 {{ end }}
 
 
-<style>
-	img { width: 80% }
-</style>
+{{/*
+{{ $date := substr .File.ContentBaseName 0 10 }}
+
+<!-- {{ $.Scratch.Set "count" 1 }}
+
+{{ range ($sliceReversed.GroupByDate "2006") }}
+
+  {{ range .Pages }}
+  {{ if (eq ($.Scratch.Get "count") 1) }}
+    {{ $.Scratch.Set "count" 0 }}
+    <h3>{{ .Date.Format "2006" }}</h3>
+  {{ end }}
+  {{ end }}
+
+  {{ $.Scratch.Set "count" 1 }}
+  
+  {{ range .Pages }}
+  
+  <a href="{{ .Permalink }}"><p>{{ .Title }}</p><hr><span>{{ .Date.Format "Jan 2"  }}</span></a>
+  {{ end }}
+  
+{{ end }}
+
+
+*/}}
 
 {{ end }}

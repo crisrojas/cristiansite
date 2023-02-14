@@ -1,4 +1,6 @@
-<h1>Web playgrounds</h1>
+
+{{ define "main" }}
+<h1>{{ .Title }} 🔫</h1>
 
 
 {{ $files := readDir "/content/webpens" }}
@@ -6,29 +8,38 @@
 {{ range ($files) }}
   {{ $shouldRender := strings.Contains .Name "html" }}
   {{ if $shouldRender }}
-  <a href="{{ .Name }}">{{ .Name }}</a>
-  <iframe src={{ .Name }}></iframe>
+  {{ $name := strings.TrimSuffix (path.Ext .Name) .Name }}
+  <article class="post child">
+	  <a class="link heading" href="/webpens/{{ .Name }}">{{ $name }}</a>
+		<iframe src=/webpens/{{ .Name }}></iframe>
+  </article>
   
   {{ end }}
 
 {{ end }}
-
 <style>
+	.heading { margin-bottom: var(--spacing) ; display: block; text-align: center}
+	h1 { text-align: center; font-weight: bolder; padding-bottom: var(--spacing-xl); font-family: var(--font-sans)}
 	
-	body {
-		max-width: 600px;
-		margin: auto;
-		padding: 20px;
+	.child {
+	  width: 100vw;
+	  position: relative;
+	  left: calc(-50vw + 50%);
+	  padding: 0 4px;
 	}
 	
-	iframe { 
-		border: none;
-		width: 100%;
-		background: gray;
-		height: 400px;
-		margin-bottom: 24px;
-		border-radius: 6px;
+	@media(min-width: 600px) {
+		.child {
+			width: 590px;
+			left: calc(-295px + 50%)
+		}
 	}
 	
-	
+	@media(min-width: 800px) {
+		.child {
+			width: 790px;
+			left: calc(-395px + 50%);
+		}
+	}
 </style>
+{{ end }}

@@ -6,12 +6,15 @@
 	{{ end }}
 <!-- <h3>Writing</h3> -->
 {{ $thoughts := where site.RegularPages "Section" "escritura" }}
-{{ range last 3 $thoughts }}
+<!-- range last 3 $thoughts -->
+{{ range $thoughts }}
+{{ if .Params.featured }}
 <a href="{{ .Permalink }}">
 	<article class="post">
 		<h4>{{ .Title }}</h4>
 		{{ .Content }}
 	</article>
 </a>
+{{ end }}
 {{ end }}
 </section>

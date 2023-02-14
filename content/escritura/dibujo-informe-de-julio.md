@@ -3,6 +3,7 @@ title: Dibujo, informe de julio
 date: 2019-08-02
 tags: ["dibujo"]
 type: "blog"
+featured: true
 ---
 Julio ha sido un mes tranquilo — sí, es un eufemismo para decir que no he sido productivo —.
 
@@ -48,7 +49,7 @@ Creo, sin embargo, que el resultado es cirtamente estético y estoy más bien co
 - ☑︎ Abandonar el dibujo y seguir con tu vida 😌 — a poder ser buscándo algo que dé dinero de verdad
 
 
-![](/media/juillet_dessin8.jpeg)
+![](/media/juillet_dessin8.jpg)
 
 En los próximos meses tengo pensado retomar el ejercicio de la estatua de Asaro. Creo que todavía se le puede sacar mucha chicha.
 

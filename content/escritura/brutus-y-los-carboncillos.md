@@ -2,6 +2,7 @@
 title: 'Brutus y los carboncillos'
 date: 2019-02-18
 type: blog
+featured: true
 ---
 Érase una vez, en el lejano reino de **HoneyPot**, un estudiante de arte llamado Brutus.
 

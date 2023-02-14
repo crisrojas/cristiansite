@@ -4,15 +4,29 @@
 <a class="button" href="/illustrations">See all <span>→</span></a>
 
 {{ end }}
-{{ $files := readDir "/content/illustrations" }}
-{{ range last 4 ($files) }}
+
+{{ $slice := slice 
+"/art/2022-09-30-Panda.jpeg"
+"/art/2019-07-13-Jesus.jpg" 
+"/art/2015-01-22-Alice.png"
+"/art/2019-08-15-Asaro.png"
+"/art/2019-08-17-Asaro-2.png"
+"/art/2018-10-08-Mastercopy-Ramon-Hurtado.png"
+"/art/2019-05-28-Zorro.png"
+"/art/2019-00-00-Mastercopy-Takehiko.png"
+"/art/2019-00-00-Beelearner.png"
+"/art/2019-00-00-Beelearner-3.png"
+"/art/2014-07-09-Mente.jpg"
+"/art/2019-00-00-Beelearner-2.png"
+}}
 <article>
+	{{ range $slice }}
 	
-	{{ $isMarkdownFile := strings.Contains .Name "md" }}
-	
-	{{ if not $isMarkdownFile }}
-	<img src="illustrations/{{ .Name }}" />
+	{{ $path := . }}
+	{{ $img := resources.Get $path }}
+	{{ $thumbnail := $img.Resize "600x" }}
+	<a href="{{ $img.RelPermalink }}"><img loading="lazy" src="{{ $thumbnail.RelPermalink }}"/></a>
 	{{ end }}
 </article>
-{{ end }}
+
 </section>

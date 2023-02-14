@@ -1,55 +1,28 @@
 {{ define "main" }}
-<h1>Playgrounds</h1>
+<h1>iOS Pens 🔫</h1>
 <p>Concept taken from <a href="https://samvlu.com">100 days of Swift</a></p>
-<main>
+
 	{{ $pages := where site.RegularPages "Section" .Section }}
 	{{ range ($pages.ByParam "ContentBaseName").Reverse }}
-	<article id="{{ .File.ContentBaseName }}">
+	<article class="post" id="{{ .File.ContentBaseName }}">
 		
 		{{ $date := substr .File.ContentBaseName 0 10 }}
-		
-			 <time datetime="{{ $date }}">{{ $date }}</time> 
-	
+		{{ $title := substr .File.ContentBaseName 11 }}
+		{{ $title := replace $title "-" " " }}
+	<!-- <time datetime="{{ $date }}">{{ $date }}</time>  -->
+	<h3>{{ $title }}</h3>
+	<video controls muted loop playsinline>
+		<source src="/iospens/media/{{ .File.ContentBaseName }}.mov" type="video/mp4">
+	</video>
+
 		{{ .Content }}
 		
 	</article>
 	{{ end }}
-</main>
+
 
 <style>
-	body {
-		max-width: 44ch;
-		margin: auto;
-		font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-		color: #44474b;
-		padding-top: 48px;
-		padding-bottom: 96px;
-		line-height: 22px;
-	}
-	
-	h1, h3 { color: #2c3138 }
-	h1 { font-weight: 600 }
-	
-	* { margin: 0 }
-	p { margin-bottom: 12px }
-	p { margin-top: 12px }
-	ul { margin: 24px 0px }
-	li { margin: 12px 0px }
-	
-	article { margin-top: 12rem }
-	time { 
-		color: rgb(130, 130, 130);
-		font-size: 14px;
-	} 
-	
-	h3 { margin-top: 6px }
-	h3 { letter-spacing: 1px }
-	h1, h3 { font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; }
-	ul { padding: 0; }
-	ul { padding-left: 18px }
-	a { color: #2c3138 }
-	video { border-radius: 4px }
-	video { width: 400px }
+	h1 { font-weight: bolder; font-family: var(--font-sans) ; margin-bottom: 12px }
 	code { 
 		display: inline-block;
 		padding: .3em .4em;
@@ -67,6 +40,10 @@
 		border-radius: .4em;
 		box-shadow: 0 0 0 1px rgba(0,20,49,.18) inset;
 	 }
+	 
+	 video {background: var(--h); margin-bottom: 16px}
+	 ol li, ul li { margin-top: 0 !important }
+	 ol li, ul li { margin-bottom: 4px; line-height: 1.5 }
 	
 </style>
 {{ end }}

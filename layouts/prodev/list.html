@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<section id="professional">
+
+<h1 class="h1-sans">Professional work 🔫</h1>
+{{ $dev := where site.RegularPages "Section" "prodev" }}
+
+
+<ul>
+{{ range $dev }}
+
+{{ partial "app-row" (dict "context" . "img" .File.ContentBaseName "name" .Title "stack" .Params.stack "id" .Params.id) }}
+{{ end }}
+</ul>
+</section>
+
+
+{{ end }}
