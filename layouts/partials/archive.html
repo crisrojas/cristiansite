@@ -1,4 +1,20 @@
 <nav>
+	
+	<h3>French articles</h3>
+	
+	{{ $files := readDir "/content/escritura/old-fr" }}
+	{{ range $files }}
+	{{ $nameCount := countwords .Name }}
+	{{ $date := substr .Name 0 10 }}
+	{{ $name := strings.TrimSuffix (path.Ext .Name) .Name }}
+	{{ $name := substr $name 11 }}
+	{{ $name := replace $name "-" " " }}
+	{{ if .IsDir }}
+	<a href="/escritura/old-fr/{{ .Name }}"><p>{{ $name }}</p><hr><span>{{ $date }}</span></a>
+	{{ end }}
+	{{ end }}
+	
+	
 {{ $section := (where .Site.RegularPages "Section" "escritura").ByDate }}
   {{ $.Scratch.Set "count" 1 }}
 

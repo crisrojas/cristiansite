@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="fr-FR">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Londrina+Outline&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<title>crisrojas | qui je suis</title>
+</head>
+<style>
+	.font-heading {
+		font-family: 'Londrina Outline';
+	}
+	.font-default {
+		font-family: 'Shadows Into Light';
+	}
+	.leading-zero {
+		line-height: 0.9;
+	}
+	a {
+		text-decoration: underline;
+	}
+</style>
+<body class="font-default bg-gray-100">
+	<button onclick="toggleNav()" class="fixed py-2 px-4" style="top: 10px; right: 10px;">Menu</button>
+	<nav id="nav" class="text-center fixed bg-gray-100 border border-gray-500 p-8 rounded-md z-10 hidden text-2xl" style="top: 10px;left: 10px;">
+		<ul>
+			<li>- &#127968; <a href="javascript:window.history.back();">Home</a></li>
+			<li>- &#128395; <a href="/escritura">Articles</a></li>
+			<li>- &#128452; <a href="//notas.cristian.lat">Zettelkästen</a></li>
+		</ul>
+	</nav>
+	<section class="mt-48 flex flex-col md:flex-row max-w-4xl mx-auto p-6">
+		<div class="flex p-8">
+			<p class="text-xl" style="width: 250px; transform: rotate(-10deg);">Voici la photo avec la pire qualité que j'ai trouvé</p>
+		<div class=""><img class="w-64" src="photo.png" alt="" /></div>
+		<p class="text-2xl" style="transform: rotate(10deg);">Cris Rojas</p>
+		</div>
+		<div class="p-8">
+			<p class="text-purple-600 text-6xl font-bold font-heading leading-zero">Yo,  &#9994;</p>
+		<p class="text-4xl mt-10">Développeur iOS et passionné de l'intégration web, l'UI et UX</p>
+		</div>
+	</section>
+	<section class="my-64 max-w-2xl mx-auto p-6">
+		<h3 class="text-5xl leading-none font-bold font-heading text-green-600">...tout ce que vous avez à savoir</h3>
+		<p class="mt-4 text-2xl">Je suis passionné des bonnes UI et de la <mark class="bg-yellow-200">confiture de lait</mark>, je dessine, écrit du code, et chant sous la douche sans aucune compassion ni remord en vers mes voisins. J'ai toujours eu le désir de construire des choses dont les gens puissent tomber amoureux. Aussi, j'ai l'air intelligent mais c'est à cause des lunettes.</p>
+	</section>
+	
+	<section class="my-64 text-center p-6" style="transform: rotate(4deg);">
+		<p class="text-6xl font-bold font-heading text-orange-700">Un peu plus au cas où...</p>
+	</section>
+	 
+	<section class="mx-auto max-w-2xl p-6">
+		
+		<div class="">
+			<p class="mt-12 ml-8 text-3xl">J'ai commencé ma relation avec les arts numériques, plus spécifquement l'HTML, quand j'avais 10 ans, au cybercafé de ma mère. C'était l'époque d'or d'internet où des gifs "en construction" <img class="w-16 inline"src="vvenancio.gif" alt="en construction"> , geocities et des  balises &lt;marquee&gt; peuplaient le web.</p>
+			 <img class="mt-6 block" src="construction.gif" alt="" />
+		</div>
+	</section>
+		<div class="mt-32 text-white bg-gray-900 text-2xl">
+			<marquee>Bienvenu à mon website "Cité_Webmaster", ce site est actuellement en construction, mais je rajouterais des gifs et d'autres balises &lt;marquee&gt; comme ceci</marquee>
+		</div>
+	<section class="mx-auto max-w-2xl p-6">
+		<div class="flex flex-col md:flex-row mt-64">
+			<img class="w-48 h-64 border-8 border-white shadow-xl" src="cybercafe.jpg" style="transform:rotate(-20deg);" alt="">
+			<p class="mt-12 max-w-sm ml-8 text-3xl">Mon petit frère et moi. <br> Nöel 2003 au cybercafé </p>
+			
+		</div>
+	
+		
+	</section>
+	<section class="my-64 text-center mx-auto max-w-2xl flex flex-col md:flex-row items-center p-6">
+		<div class="p-8">
+			<h3 class="text-3xl">Ma chanson préféré, maintenant la votre (de rien)</h3>
+		</div>
+		<div> 
+			<iframe  class="border-8 shadow-xl border-white"style="transform: rotate(4deg);" width="300" height="150" src="https://www.youtube.com/embed/cfiiMb0BYdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</section> 
+	<section class="mt-64 text-center mx-auto max-w-2xl flex flex-col md:flex-row items-center p-6">
+		<div>
+			<a href="https://refactoringui.com/"><img style="transform: rotate(-5deg);"class="w-64" src="https://refactoring-ui.nyc3.cdn.digitaloceanspaces.com/landing/book-cover-sm.png" alt="" /></a>
+		</div>
+		<div>
+			<h3 class="text-3xl">Mon livre préferé</h3>
+
+		</div>		
+		
+	</section>
+	<section class="my-64 mx-auto max-w-3xl text-2xl p-6">
+		<h3 class="text-4xl font-bold">Quel stack technologique utilise ce site</h3>
+		<p class="mt-4">Après m'avoir battu contre Wordpress pendant des années, avoir gouté les délices des flat-file CMS — dont Grav et mon bienaimé Statamic — et flirté également avec des SSG JS tels que Gatsby, j'ai décidé finalement de retourner aux origines et donc au bon vieux combo HTML/CSS.
+
+		<p class="mt-8">- <a href="https://tailwindcss.com">Tailwind</a></p>
+		<p>- <a href="https://github.com">Github</a></p>
+		<p>- <a href="https://netlify.com">Netlify</a></p>
+		<p>- <a href="https://espressoapp.com">Espresso 5</a></p>
+		</p>
+	</section>
+	<footer class="text-center mt-64 p-8 text-3xl">
+		Crafted with &#128156; and &#128293;  by Cristiacito Felipito Rojitas
+	</footer> 
+<script type="text/javascript">
+	function toggleNav() {
+	var x = document.getElementById("nav");
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
+	}
+}
+document.onkeydown = function(evt) {
+evt = evt || window.event;
+if (evt.keyCode == '37') {
+	window.history.back();
+}
+if (evt.keyCode == '39') {
+	window.history.forward();
+}
+if (evt.keyCode == '38') {
+	window.location.href = "./"
+}
+};
+</script>
+</body>
+</html>
