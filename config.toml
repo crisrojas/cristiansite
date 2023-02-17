@@ -11,7 +11,7 @@ publishDir = "public"
 # Allows rendering the html inside markdown
 [markup.goldmark.renderer]
 unsafe= true
-assetsDir = "assets"
+#assetsDir = "assets"
 
 [markup]
 [markup.highlight]
