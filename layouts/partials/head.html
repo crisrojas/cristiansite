@@ -3,6 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ .Content | truncate 300 }}" />
+  
   {{- with .OutputFormats.Get "rss" -}} {{- printf `
   <link rel="%s" type="%s" href="%s" title="%s" />
   ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}} {{-
@@ -13,4 +14,5 @@
   <title>{{ $title }} | {{ $siteTitle }}</title>
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link href="{{ $css.Permalink }}" rel="stylesheet"/>
+
 </head>
